@@ -8,6 +8,12 @@ setTimeout(function() {
 closeSpan.addEventListener("click", closeModal);
 
 
+document.addEventListener("keyup", function() {
+	if (event.keyCode === 27) {
+		closeModal();
+	}
+});
+
 function closeModal() {
 	modal.style.display = "none";
 }
