@@ -1,9 +1,11 @@
 var modal = document.getElementsByClassName("modal-container")[0];
+var overlay = document.getElementsByClassName("overlay")[0];
 var closeSpan = document.getElementsByClassName("modal-close")[0];
 
 setTimeout(function() {
 	modal.style.display = "block";
-}, 800);
+	overlay.style.display = "block";
+}, 600);
 
 closeSpan.addEventListener("click", closeModal);
 
@@ -16,4 +18,5 @@ document.addEventListener("keyup", function() {
 
 function closeModal() {
 	modal.style.display = "none";
+	overlay.style.display = "none";
 }

@@ -3,17 +3,31 @@
 }
 
 body {
-	font-family: Verdana;
+	font-family: Helvetica;
+}
+
+.overlay {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-container {
+	z-index: 1;
 	display: none;
 	margin: 0 auto;
-	position: relative;
-	top: 200px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	width: 300px;
 	height: 200px;
-	border: 1px solid #000;
+	background-color: #fff;
 	border-radius: 5px;
 }
 
@@ -27,12 +41,13 @@ body {
 
 .modal-close {
 	float: right;
+	font-size: 1.7em;
 	margin: 2px 5px 0 0;
 }
 
 .modal-close:hover {
 	color: #fff;
-	cursor: default;
+	cursor: pointer;
 }
 
 .modal-body {
@@ -43,6 +58,7 @@ body {
 
 .sign-up-call {
 	width: 100%;
+	padding: 0 20px;
 	text-align: center;
 }
 
