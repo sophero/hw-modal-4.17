@@ -1,0 +1,24 @@
+.modal-container {
+	margin: 0 auto;
+	position: relative;
+	top: 200px;
+	width: 40vw;
+	min-width: 300px;
+	height: 30vw;
+	min-height: 200px;
+	border: 1px solid #000;
+}
+
+/* Mobile-First Media Queries */
+
+@media all and (min-width: 768px) {
+
+}
+
+@media all and (min-width: 992px) {
+
+}
+
+@media all and (min-width: 1200px) {
+
+}
