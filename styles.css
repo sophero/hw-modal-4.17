@@ -22,7 +22,7 @@ body {
 	display: none;
 	margin: 0 auto;
 	position: absolute;
-	top: 40%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 300px;
@@ -32,7 +32,7 @@ body {
 }
 
 .modal-header {
-	height: 30px;
+	height: 35px;
 	background-color: lightblue;
 	margin: 0 0 20px 0;
 	border-top-left-radius: 5px;
@@ -42,7 +42,7 @@ body {
 .modal-close {
 	float: right;
 	font-size: 1.7em;
-	margin: 2px 5px 0 0;
+	margin: 2px 8px 0 0;
 }
 
 .modal-close:hover {
@@ -51,19 +51,44 @@ body {
 }
 
 .modal-body {
-	display: flex;
+	/*display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 }
 
-.sign-up-call {
+.signup-call {
 	width: 100%;
 	padding: 0 20px;
 	text-align: center;
 }
 
-.sign-up-form {
-	/*width: 100%;*/
+.signup-form {
+	
+}
+
+.email-input {
+	display: block;
+	width: 220px;
+	margin: 0 auto;
+	line-height: 35px;
+	font-size: 1em;
+}
+
+.signup-button {
+	display: block;
+	margin: 6px auto;
+	background-color: lightgreen;
+	width: 100px;
+	border: 3px solid lightgreen;
+	border-radius: 3px;
+	font-size: 1em;
+	color: #fff;
+}
+
+.signup-button:hover {
+	background-color: #3dd36c;
+	border-color: #3dd36c;
+	cursor: pointer;
 }
 
 /* Mobile-First Media Queries */
@@ -74,10 +99,8 @@ body {
 		width: 35vw;
 		min-width: 300px;
 		max-width: 380px;
-		height: 25vw;
-		min-height: 200px;
-		max-height: 290px;	
 	}
+
 }
 
 @media all and (min-width: 992px) {
