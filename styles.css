@@ -1,25 +1,100 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana;
+}
+
 .modal-container {
 	display: none;
 	margin: 0 auto;
 	position: relative;
 	top: 200px;
-	width: 40vw;
-	min-width: 300px;
-	height: 30vw;
-	min-height: 200px;
+	width: 300px;
+	height: 200px;
 	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+.modal-header {
+	height: 30px;
+	background-color: lightblue;
+	margin: 0 0 20px 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.modal-close {
+	float: right;
+	margin: 2px 5px 0 0;
+}
+
+.modal-close:hover {
+	color: #fff;
+	cursor: default;
+}
+
+.modal-body {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sign-up-call {
+	width: 100%;
+	text-align: center;
+}
+
+.sign-up-form {
+	/*width: 100%;*/
 }
 
 /* Mobile-First Media Queries */
 
 @media all and (min-width: 768px) {
 
+	.modal-container {
+		width: 35vw;
+		min-width: 300px;
+		max-width: 380px;
+		height: 25vw;
+		min-height: 200px;
+		max-height: 290px;	
+	}
 }
 
 @media all and (min-width: 992px) {
 
+/*	.modal-container {
+		min-width: ;
+		max-width: ;
+		min-height: ;
+		max-height: ;
+	}
+*/
 }
 
 @media all and (min-width: 1200px) {
 
+/*	.modal-container {
+		min-width: ;
+		max-width: ;
+		min-height: ;
+		max-height: ;
+	}
+*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
