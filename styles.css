@@ -151,6 +151,10 @@ body {
 
 @media all and (max-width: 420px) {
 
+	.banner-container {
+		height: 28vw;
+	}
+
 	.main-header {
 		font-size: 19vw;
 	}
