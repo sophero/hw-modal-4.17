@@ -6,7 +6,7 @@ var signUpBtn = document.getElementsByClassName("signup-button")[0];
 setTimeout(function() {
 	modal.style.display = "block";
 	overlay.style.display = "block";
-}, 600);
+}, 3000);
 
 closeSpan.addEventListener("click", closeModal);
 signUpBtn.addEventListener("click", closeModal);

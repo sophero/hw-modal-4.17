@@ -5,10 +5,9 @@
 body {
 	margin: 0;
 	font-family: Helvetica;
-	color: #fff;
+	/*color: #fff;*/
 	/*background-color: #92b3e8;*/
-	/*background-color: #b7cae8;*/
-	background-color: #fff;
+	background-color: #b7cae8;
 }
 
 .overlay {
@@ -46,6 +45,7 @@ body {
 
 .modal-close {
 	float: right;
+	color: #fff;
 	font-size: 1.7em;
 	margin: 2px 8px 0 0;
 }
@@ -79,7 +79,7 @@ body {
 
 .signup-button {
 	display: block;
-	margin: 6px auto;
+	margin: 10px auto;
 	background-color: lightgreen;
 	width: 100px;
 	border: 3px solid lightgreen;
@@ -114,7 +114,8 @@ body {
 
 .nav {
 	width: 100%;
-	height: 40px;
+	height: 44px;
+	color: #fff;
 	background-color: #000;
 	position: fixed;
 	top: 0;
@@ -136,15 +137,37 @@ body {
 	flex-wrap: wrap;
 }
 
+.content-container p {
+	text-align: center;
+}
+
+.join {
+	margin-bottom: 10px;
+}
+
+.about {
+	line-height: 1.5em;
+	margin: 0;
+}
+
+.about li {
+	margin: 20px 0;
+}
+
+.why-wait {
+		/*margin: 10px 0 30px 0;*/
+}
+
+.tiles-main-container {
+	width: 100%;
+	margin: 10px auto;
+}
+
 .tile-container {
 	width: 100%;
 	height: 300px;
 	border: 1px solid black;
 }
-
-
-
-
 
 
 /* Mobile-First Media Queries */
