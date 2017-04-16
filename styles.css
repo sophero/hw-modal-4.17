@@ -4,6 +4,7 @@
 
 body {
 	margin: 0;
+	/*position: relative;*/
 	font-family: Helvetica;
 	/*color: #fff;*/
 	/*background-color: #92b3e8;*/
@@ -12,11 +13,13 @@ body {
 
 .overlay {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	right: 0;
 	left: 0;
+	/*width: 100%;*/
+	/*height: 100%;*/
 	z-index: 0;
 	background-color: rgba(0, 0, 0, 0.6);
 }
@@ -25,7 +28,7 @@ body {
 	z-index: 1;
 	display: none;
 	margin: 0 auto;
-	position: absolute;
+	position: fixed;
 	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -119,6 +122,7 @@ body {
 	background-color: #000;
 	position: fixed;
 	top: 0;
+	/*z-index: 10;*/
 	/*margin-top: 15px;*/
 	padding-top: 15px;
 	display: flex;
@@ -129,46 +133,84 @@ body {
 	font-weight: lighter;
 }
 
-.content-container {
-	margin: 20px auto;
-	width: 90%;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+.about-container {
+	/*position: relative;*/
+	color: #fff;
+	font-weight: lighter;
+	margin: 10px auto;
+	padding: 5px;
+	width: 98%;
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.6),
+		rgba(0, 0, 0, 0.6)),
+		url('images/guitarist-silhouette.jpg');
+	background-position: center;
+	background-size: cover;
+	border: 1px solid black;
+	border-radius: 3px;
 }
 
-.content-container p {
+.about-container p {
 	text-align: center;
+	margin: 25px 0;
+}
+
+.about-container__overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(255, 255, 255, 0.7);
 }
 
 .join {
 	margin-bottom: 10px;
+	text-decoration: underline;
 }
 
-.about {
+.about-list {
 	line-height: 1.5em;
 	margin: 0;
 }
 
-.about li {
+.about-list li {
 	margin: 20px 0;
 }
 
 .why-wait {
-		/*margin: 10px 0 30px 0;*/
+	font-size: 1.2em;
+}
+
+.title {
+	font-weight: bold;
 }
 
 .tiles-main-container {
-	width: 100%;
 	margin: 10px auto;
+	width: 98%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .tile-container {
 	width: 100%;
 	height: 300px;
 	border: 1px solid black;
+	background-size: cover;
+	background-position: center;
 }
 
+.screenshot {
+	background-image: url('images/tab-viewer-screenshot.png');
+}
+.screenshot-fingerboard {
+	background-image: url('images/tab-viewer-screenshot-fingerboard.png');
+}
+.screenshot-catalogue {
+	background-image: url('images/tab-viewer-screenshot-catalogue.png');
+}
 
 /* Mobile-First Media Queries */
 
