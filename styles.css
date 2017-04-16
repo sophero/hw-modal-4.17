@@ -3,7 +3,12 @@
 }
 
 body {
+	margin: 0;
 	font-family: Helvetica;
+	color: #fff;
+	/*background-color: #92b3e8;*/
+	/*background-color: #b7cae8;*/
+	background-color: #fff;
 }
 
 .overlay {
@@ -46,14 +51,12 @@ body {
 }
 
 .modal-close:hover {
-	color: #fff;
-	cursor: pointer;
+	color: #000;
+	cursor: default;
 }
 
 .modal-body {
-	/*display: flex;
-	justify-content: center;
-	flex-wrap: wrap;*/
+	color: #000;
 }
 
 .signup-call {
@@ -91,7 +94,68 @@ body {
 	cursor: pointer;
 }
 
+.banner-container {
+	height: 120px;
+	/*background-color: #374559;*/
+	background-color: #000;
+}
+
+.main-header {
+	/*color: #b7cae8;*/
+	/*color: #c6dcf2;*/
+	width: 100%;
+	color: #92b3e8;
+	margin: 40px auto 0 auto;
+	padding-top: 10px;
+	text-align: center;
+	font-family: Impact;
+	font-size: 5em;
+}
+
+.nav {
+	width: 100%;
+	height: 40px;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	/*margin-top: 15px;*/
+	padding-top: 15px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-item {
+	font-weight: lighter;
+}
+
+.content-container {
+	margin: 20px auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.tile-container {
+	width: 100%;
+	height: 300px;
+	border: 1px solid black;
+}
+
+
+
+
+
+
 /* Mobile-First Media Queries */
+
+@media all and (max-width: 420px) {
+
+	.main-header {
+		font-size: 19vw;
+	}
+
+}
 
 @media all and (min-width: 768px) {
 
@@ -124,9 +188,6 @@ body {
 	}
 */
 }
-
-
-
 
 
 
