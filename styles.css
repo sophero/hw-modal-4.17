@@ -6,11 +6,8 @@
 
 body {
 	margin: 0;
-	/*position: relative;*/
 	font-family: Helvetica, sans-serif;
-	/*color: #fff;*/
 	background-color: #92b3e8;
-	/*background-color: #b7cae8;*/
 }
 
 .overlay {
@@ -20,8 +17,6 @@ body {
 	bottom: 0;
 	right: 0;
 	left: 0;
-	/*width: 100%;*/
-	/*height: 100%;*/
 	z-index: 1;
 	background-color: rgba(0, 0, 0, 0.7);
 }
@@ -111,12 +106,8 @@ body {
 }
 
 .main-header {
-	/*color: #b7cae8;*/
-	/*color: #c6dcf2;*/
 	color: #fff;
-	/*text-shadow: 2px 2px #fffß;*/
 	width: 100%;
-	/*color: #92b3e8;*/
 	margin: 40px auto 0 auto;
 	padding-top: 20px;
 	text-align: center;
@@ -149,10 +140,8 @@ body {
 }
 
 .about-container {
-	/*position: relative;*/
 	color: #fff;
 	font-weight: lighter;
-	/*margin: 5px auto 0 auto;*/
 	margin: 0 auto;
 	padding: 5px;
 	width: 100%;
@@ -167,7 +156,6 @@ body {
 
 .about-container p {
 	text-align: center;
-	/*margin: 25px 0;*/
 }
 
 .about-content {
@@ -240,7 +228,6 @@ body {
 }
 .screenshot-catalogue {
 	background-image: url('images/tab-viewer-screenshot-catalogue.png');
-	/*background-position: top;*/
 }
 
 /* Mobile-First Media Queries */
@@ -253,11 +240,19 @@ body {
 
 	.main-header {
 		font-size: 4.2em;
-		/*font-size: 19vw;*/
 	}
 
 	.about-list {
 		width: 65%;
+	}
+
+	.get-playing {
+		transition: font-size 0.3s;
+	}
+
+	.get-playing:hover {
+		font-size: 1.45em;
+		cursor: pointer;
 	}
 
 	.tile-container {
@@ -320,13 +315,5 @@ body {
 	}
 
 }
-
-
-
-
-
-
-
-
 
 
