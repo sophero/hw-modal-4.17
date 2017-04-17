@@ -79,10 +79,6 @@ body {
 	text-align: center;
 }
 
-.signup-form {
-	
-}
-
 .email-input {
 	display: block;
 	width: 220px;
@@ -131,26 +127,33 @@ body {
 .nav {
 	width: 100%;
 	height: 44px;
-	color: #fff;
+	color: #92b3e8;
+	font-weight: bold;
+	font-size: 0.9em;
 	background-color: #000;
 	position: fixed;
 	top: 0;
 	z-index: 0;
-	/*margin-top: 15px;*/
 	padding-top: 15px;
 	display: flex;
 	justify-content: space-around;
 }
 
 .nav-item {
-	font-weight: lighter;
+	transition: color 0.1s;
+}
+
+.nav-item:hover {
+	color: #fff;
+	cursor: pointer;
 }
 
 .about-container {
 	/*position: relative;*/
 	color: #fff;
 	font-weight: lighter;
-	margin: 5px auto 0 auto;
+	/*margin: 5px auto 0 auto;*/
+	margin: 0 auto;
 	padding: 5px;
 	width: 100%;
 	background: linear-gradient(
@@ -164,12 +167,16 @@ body {
 
 .about-container p {
 	text-align: center;
-	margin: 25px 0;
+	/*margin: 25px 0;*/
 }
 
 .about-content {
 	margin: 0 auto;
 	width: 90%;
+}
+
+.welcome {
+	margin: 25px 0;
 }
 
 .join {
@@ -180,7 +187,9 @@ body {
 .about-list {
 	line-height: 1.5em;
 	margin: 0 auto;
-	width: 90%;
+	width: 85%;
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 .about-list li {
@@ -193,8 +202,13 @@ body {
 
 .why-wait {
 	font-size: 1.2em;
-	padding-top: 20px;
-	margin-bottom: 0px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+}
+
+.get-playing {
+	margin: 10px 0 15px 0;
+	font-size: 1.3em;
 }
 
 .title {
@@ -202,8 +216,8 @@ body {
 }
 
 .tiles-main-container {
-	margin: 2px auto;
-	width: 99%;
+	margin: 2px auto 5px auto;
+	width: 97%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -212,7 +226,7 @@ body {
 .tile-container {
 	width: 100%;
 	height: 300px;
-	margin: 2px 0;
+	margin: 4px 0;
 	background-size: cover;
 	background-position: center;
 }
@@ -226,7 +240,7 @@ body {
 }
 .screenshot-catalogue {
 	background-image: url('images/tab-viewer-screenshot-catalogue.png');
-	background-position: top;
+	/*background-position: top;*/
 }
 
 /* Mobile-First Media Queries */
@@ -243,7 +257,15 @@ body {
 	}
 
 	.about-list {
-		width: 75%;
+		width: 65%;
+	}
+
+	.tile-container {
+		transition: all 0.4s;
+	}
+
+	.tile-container:hover {
+		height: 330px;
 	}
 
 }
@@ -260,28 +282,43 @@ body {
 		width: 50%;
 	}
 
+	.tile-container {
+		width: 45%;
+		margin: 5px;
+	}
+
+	.tile-container:hover {
+		width: 50%;
+	}
+
 }
 
 @media all and (min-width: 992px) {
 
-/*	.modal-container {
-		min-width: ;
-		max-width: ;
-		min-height: ;
-		max-height: ;
+	.about-container {
+		width: 90%;
 	}
-*/
+
+	.about-list {
+		width: 45%;
+	}
+
+	.tile-container {
+		width: 30%;
+	}
+
+	.tile-container:hover {
+		width: 35%;
+	}
+
 }
 
 @media all and (min-width: 1200px) {
 
-/*	.modal-container {
-		min-width: ;
-		max-width: ;
-		min-height: ;
-		max-height: ;
+	.about-list {
+		width: 40%;
 	}
-*/
+
 }
 
 
